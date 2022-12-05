@@ -4,7 +4,7 @@
 // и т.д. Результат запишите в новом массиве.
 // [1 2 3 4 5] -> 5 8 3
 // [6 7 3 6] -> 36 21
-Console.Clear();
+//Console.Clear();
 
 int[] array = GenerateArray(1, 10, 5);
 PrintArray(array);
