@@ -4,13 +4,10 @@
 // отрезке [10,99].
 Console.Clear();
 
-
-int[] array = GenerateArray(-50,200,123);
+int[] array = GenerateArray(-50, 200, 123);
 PrintArray(array);
 int numberOfHits = Counter(array);
 Console.WriteLine($"Колличество попаданий в отрезок [10, 99] - {numberOfHits}");
-
-
 
 
 void PrintArray(int[] array)
@@ -19,17 +16,16 @@ void PrintArray(int[] array)
     Console.WriteLine($"[{message}], ");
 }
 
-int Counter (int [] array)
+int Counter(int[] array)
 {
     int count = 0;
-    for (int i = 0; i<array.Length; i++)
+    for (int i = 0; i < array.Length; i++)
     {
         if (array[i] > 9 && array[i] < 100)
-        count++;
+            count++;
     }
     return count;
 }
-
 
 int[] GenerateArray(int min, int max, int length)
 {
