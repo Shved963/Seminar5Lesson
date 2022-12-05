@@ -6,13 +6,14 @@
 Console.Clear();
 
 int[] arr = GenerateArray(-10, 10, 10);
-PrintArray(arr);
+
 bool isParsed = int.TryParse(Console.ReadLine(), out int num);
 if (!isParsed)
 {
     Console.WriteLine("Incorrect data");
     return;
 }
+PrintArray(arr);
 bool result = FinderNumber(arr, num);
 Console.WriteLine($"{num} - find number in array. It's {result}");
 
@@ -31,7 +32,7 @@ bool FinderNumber(int[] array, int findNum)
         if (findNum == array[i])
         {
             return true;
-        }       
+        }
     }
     return false;
 }
